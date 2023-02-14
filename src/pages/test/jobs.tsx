@@ -3,6 +3,7 @@ import JobBox from "@/components/JobBox";
 import { api } from "@/services/apiClient";
 import { Container, Footer, Header, ResultsWrapper } from "@/styles/pages/test/jobs";
 import { GetStaticProps } from "next";
+import Head from "next/head";
 import Image from "next/image";
 import { useCallback, useEffect, useState } from "react";
 
@@ -90,6 +91,9 @@ export default function Home({ jobs }: HomeProps) {
 
   return (
     <Container>
+      <Head>
+        <title>Zippia test</title>
+      </Head>
       <Header>
         <Image src={zippiaLogo} width={160} height={36} alt={""} />
       </Header>
