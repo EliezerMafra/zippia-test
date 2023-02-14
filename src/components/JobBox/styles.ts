@@ -12,12 +12,12 @@ export const BoxWrapper = styled.div`
   min-width: 18rem;
   height: 10rem;
 
-  border-radius: 8px;
+  border-radius: 16px;
 
   border: 1px solid ${(props) => props.theme['light-blue']};
   
   :hover{
-    background-color: ${props => props.theme['hover-blue']};
+    background-color: ${props => props.theme['light-hover-blue']};
   }
 `
 
@@ -35,8 +35,16 @@ export const CompanyLogo = styled(Image)`
 `
 
 export const InfoWrapper = styled.div`
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin: 0 2rem;
+  width: 10rem;
+  text-align: center;
 `
 export const DescriptionWrapper = styled.div`
-  max-width: 40rem;
+  width: 40rem;
+  height: 8rem;
+  overflow: auto;
 `

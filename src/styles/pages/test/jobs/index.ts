@@ -24,3 +24,21 @@ export const ResultsWrapper = styled.div`
   flex-direction: column;
   gap: 1rem;
 `
+
+export const Footer = styled.footer`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: smaller;
+
+  margin-top: 2rem;
+
+
+  width: 100%;
+  height: 5rem;
+  background-color: ${(props) => props.theme['strong-grey']};
+  color: ${(props) => props.theme['white']};
+
+
+`
