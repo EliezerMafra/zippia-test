@@ -4,8 +4,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
-  min-height: 100vh;
+  justify-content: center;
   width: 100%;
 `
 
@@ -20,7 +19,10 @@ export const Header = styled.header`
 `
 
 export const ResultsWrapper = styled.div`
+  max-width: 100%;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   gap: 1rem;
 `

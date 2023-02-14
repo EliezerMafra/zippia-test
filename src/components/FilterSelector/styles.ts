@@ -22,7 +22,7 @@ interface ButtonProps {
 
 export const FilterButton = styled.button<ButtonProps>`
   height: 3rem;
-  width: 9rem;
+  width: 8rem;
   border: 1px solid ${(props) => props.theme['light-blue']};
   border-radius: 8px;
   
