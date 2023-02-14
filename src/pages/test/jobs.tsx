@@ -72,8 +72,6 @@ export default function Home({ jobs }: HomeProps) {
     }
 
     if (sevenDaysFilter.isActive) {
-      console.log((new Date().getTime() - new Date(jobs[1].postingDate).getTime()) / (86400000) <= 7)
-      console.log((new Date().getTime() - new Date(jobs[2].postingDate).getTime()) / (86400000) <= 7)
       setShownJobs(
         jobs.filter((job) => {
           return (((new Date().getTime() - new Date(job.postingDate).getTime()) / (86400000)) <= 7)
@@ -88,12 +86,6 @@ export default function Home({ jobs }: HomeProps) {
   useEffect(() => {
     handleShownJobs()
   }, [handleShownJobs]
-  )
-
-  useEffect(() => {
-    console.log('AQUIIII')
-    console.log(shownJobs)
-  }, [shownJobs]
   )
 
   return (
